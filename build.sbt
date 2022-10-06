@@ -6,3 +6,11 @@ lazy val root = (project in file("."))
   .settings(
     name := "refresher"
   )
+
+scalacOptions ++= Seq(
+  "-unchecked",
+  "-deprecation",
+  "-explaintypes",
+  "-feature",
+
+)
