@@ -15,8 +15,8 @@ object TraitLimiting {
   /**
    * `Class` that wants to have `trait` [[Sour]] mixed into it must have `method` `taste()` defined
    */
-  trait Sour[T] {
-    this: {def taste(bit: T): T} =>
+  trait Sour {
+    this: {def taste(bit: String): String} =>
   }
 
 }
